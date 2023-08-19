@@ -1,0 +1,9 @@
+[template]
+cargo_generate_version = ">=0.9.0"
+ignore = [
+    "target"
+]
+
+[placeholders]
+description = { type="string", prompt="Description for the crate" }
+name_for_license = { type="string", prompt="Name to include in the license" }
