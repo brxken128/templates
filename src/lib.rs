@@ -1,4 +1,3 @@
-#![doc = include_str!("../README.md")]
 #![warn(
 	clippy::all,
 	clippy::pedantic,
@@ -16,8 +15,10 @@
 	trivial_numeric_casts,
 	unused_allocation,
 	clippy::as_conversions,
-	clippy::dbg_macro
+	clippy::dbg_macro,
+	clippy::deprecated_cfg_attr,
+	clippy::separated_literal_suffix,
+	deprecated
 )]
-#![forbid(unsafe_code)]
-#![allow(clippy::module_name_repetitions)]
-
+#![forbid(unsafe_code, deprecated_in_future)]
+#![allow(clippy::missing_errors_doc, clippy::module_name_repetitions)]
