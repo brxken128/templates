@@ -22,8 +22,3 @@
 )]
 #![forbid(unsafe_code, deprecated_in_future)]
 #![allow(clippy::missing_errors_doc, clippy::module_name_repetitions)]
-
-#[must_use]
-const fn test(a: u32, b: u32) -> u32 {
-    a + b
-}

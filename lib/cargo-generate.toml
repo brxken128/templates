@@ -1,9 +1,16 @@
 [template]
 cargo_generate_version = ">=0.9.0"
 ignore = [
-    "target"
+    "target",
+    ".trunk"
+]
+
+[conditional.'within_cargo_project']
+exclude = [
+    "Cargo.lock"
 ]
 
 [placeholders]
 description = { type="string", prompt="Description for the crate" }
+author = { type="string", prompt="Author for the crate (with email)" }
 name_for_license = { type="string", prompt="Name to include in the license" }

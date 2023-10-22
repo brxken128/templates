@@ -22,7 +22,3 @@
 )]
 #![forbid(unsafe_code, deprecated_in_future)]
 #![allow(clippy::missing_errors_doc, clippy::module_name_repetitions)]
-
-fn main() {
-    println!("{}", 1u8 + 2u8);
-}
