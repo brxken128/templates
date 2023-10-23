@@ -1,2 +1,2 @@
 [template]
-sub_templates = ["crate", "binary"]
+sub_templates = ["lib", "bin"]
