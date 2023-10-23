@@ -2,14 +2,13 @@
 cargo_generate_version = ">=0.9.0"
 ignore = [
     "target",
-    ".trunk"
+    "Cargo.lock"
 ]
 
 [conditional.'within_cargo_project']
 exclude = [
     "Cargo.lock"
 ]
-
 
 [placeholders]
 description = { type="string", prompt="Description for the crate" }
