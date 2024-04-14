@@ -8,17 +8,17 @@
     clippy::complexity,
     clippy::nursery,
     clippy::unwrap_used,
-    unused_qualifications,
-    rust_2018_idioms,
     clippy::expect_used,
-    trivial_casts,
-    trivial_numeric_casts,
-    unused_allocation,
     clippy::as_conversions,
     clippy::dbg_macro,
     clippy::deprecated_cfg_attr,
     clippy::separated_literal_suffix,
-    deprecated
+    clippy::cargo,
+    deprecated,
+    trivial_casts,
+    trivial_numeric_casts,
+    unused_allocation,
+    unused_qualifications,
+    rust_2018_idioms
 )]
 #![forbid(unsafe_code, deprecated_in_future)]
-#![allow(clippy::missing_errors_doc, clippy::module_name_repetitions)]
